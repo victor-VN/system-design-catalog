@@ -1,0 +1,25 @@
+version: 1
+
+# create FIRST Level groups branch
+
+dn: ou=groups,dc=collegefloral,dc=org
+objectclass:organizationalunit
+ou: groups
+description: generic groups branch
+
+# create the itpeople entry under groups
+
+dn: cn=itpeople,ou=groups,dc=collegefloral,dc=org
+objectclass: groupofnames
+cn: itpeople
+description: IT security group
+member: cn=Victor Oliveira,ou=people,dc=collegefloral,dc=org
+member: cn=Rafa Novo,ou=student,ou=people,dc=collegefloral,dc=org
+
+# create the hrpeople entry under groups
+
+dn: cn=hrpeople,ou=groups,dc=collegefloral,dc=org
+objectclass: groupofnames
+cn: hrpeople
+description: Human Resources group
+member: cn=Cibele Hengleng Novo,ou=people,dc=collegefloral,dc=org

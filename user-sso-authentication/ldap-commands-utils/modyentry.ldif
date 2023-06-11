@@ -1,0 +1,18 @@
+version: 1
+
+## MODIFY the Robert Smith entry
+
+dn: cn=Victor Oliveira,ou=people,dc=collegefloral,dc=org
+changetype: modify
+add: telephonenumber
+telephonenumber: 555-555-1212
+telephonenumber: 212
+-
+replace: uid
+uid: victornoliveira
+-
+replace: mail
+mail: robert.smith@example.com
+mail: bob.smith@example.com
+-
+delete: description
